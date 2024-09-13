@@ -6,9 +6,9 @@ export default function Home() {
     <main>
       <h1 className="text-3xl">First Assignment</h1>
       <p>Hello World</p>
-      <StudentInfo />
+
       <ul>
-        <Link href="./week-2" className="underline text-cyan-600 hover:text-cyan-300">My GitHub</Link>
+        <Link href="./week-2/" className="underline text-cyan-600 hover:text-cyan-300">Week 2 Assignment</Link>
       </ul>
     </main>
   );
