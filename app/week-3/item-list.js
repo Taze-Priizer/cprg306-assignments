@@ -1,7 +1,7 @@
 import Item from "./item";
 
 
-export default function ItemList() {
+export default function ItemList(props) {
 
     const item1 = {
         name: "milk, 4 L 🥛",
@@ -76,8 +76,19 @@ export default function ItemList() {
       };
 
     return(
-        <div>
-            <Item item={item1} />
+        <div className="inline-block bg-green-500 border border-red-500 my-5 p-3 mx-3">
+            <li><Item item={item1}/></li>
+            <li><Item item={item2}/></li>
+            <li><Item item={item3}/></li>
+            <li><Item item={item4}/></li>
+            <li><Item item={item5}/></li>
+            <li><Item item={item6}/></li>
+            <li><Item item={item7}/></li>
+            <li><Item item={item8}/></li>
+            <li><Item item={item9}/></li>
+            <li><Item item={item10}/></li>
+            <li><Item item={item11}/></li>
+            <li><Item item={item12}/></li>
         </div>
     );
 }
