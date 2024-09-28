@@ -76,19 +76,19 @@ export default function ItemList(props) {
       };
 
     return(
-        <div className="inline-block bg-green-500 border border-red-500 my-5 p-3 mx-3">
-            <li><Item item={item1}/></li>
-            <li><Item item={item2}/></li>
-            <li><Item item={item3}/></li>
-            <li><Item item={item4}/></li>
-            <li><Item item={item5}/></li>
-            <li><Item item={item6}/></li>
-            <li><Item item={item7}/></li>
-            <li><Item item={item8}/></li>
-            <li><Item item={item9}/></li>
-            <li><Item item={item10}/></li>
-            <li><Item item={item11}/></li>
-            <li><Item item={item12}/></li>
+        <div className="inline-block my-6 p-2 mx-2">
+            <ul className="bg-amber-500 border-l-green-300 p-3"><Item item={item1}/></ul>
+            <ul className="bg-emerald-400 p-3"><Item item={item2}/></ul>
+            <ul className="bg-orange-300"><Item item={item3}/></ul>
+            <ul className="bg-yellow-400"><Item item={item4}/></ul>
+            <ul className="bg-green-800"><Item item={item5}/></ul>
+            <ul className="bg-orange-400"><Item item={item6}/></ul>
+            <ul className="bg-red-400"><Item item={item7}/></ul>
+            <ul className="bg-red-500"><Item item={item8}/></ul>
+            <ul className="bg-stone-400"><Item item={item9}/></ul>
+            <ul className="bg-zinc-600"><Item item={item10}/></ul>
+            <ul className="bg-slate-700"><Item item={item11}/></ul>
+            <ul className="bg-pink-600"><Item item={item12}/></ul>
         </div>
     );
 }
