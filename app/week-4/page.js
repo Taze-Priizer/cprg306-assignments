@@ -3,7 +3,7 @@ import NewItem from "./new-item";
 export default function Page(){
 
     return(
-    <main>
+    <main className="p-5">
         <NewItem />
     </main>
     );
