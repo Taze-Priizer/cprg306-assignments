@@ -10,9 +10,15 @@ export default function NewItem(){
 
     const increment = () => {
         if( quantity < 20 ){setQuantity(quantity + 1)
+            btnDisabled = false;
         }
-        if( quantity >= 20 ){
+        else if( quantity >= 20 ){
             btnDisabled = true;}
+    };
+
+    const decrement = () => {
+        if( quantity > 1 ){setQuantity(quantity - 1)}
+        else if (quantity <= 0 ){btnDisabled = true;}
     };
 
     let btnStyles = "bg-blue-600 text-white rounded py-2 px-4 mt-5 mr-3 hover:bg-blue-400 active:bg-yellow-600 disabled:bg-gray-500";
@@ -21,7 +27,7 @@ export default function NewItem(){
             <div className="bg-orange-300 p-5">
                 <p className="text-2xl lg">{quantity}</p>
                 <button className={btnStyles} onClick={ increment } disabled={btnDisabled}>Increase</button>
-
+                <button className={btnStyles} onClick={ decrement } disabled={btnDisabled}>Decrease</button>
             </div>
 
     );
