@@ -5,7 +5,8 @@ import { useState } from "react";
 export default function NewItem(){
 
     const [quantity, setQuantity] = useState(1);
-
+    const [name, setName] = useState("");
+    const [category, setCategory] = useState("produce");
 
 
     let incBtnDisabled = quantity >= 20 ? true : false;
