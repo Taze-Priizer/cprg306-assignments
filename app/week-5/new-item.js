@@ -73,8 +73,20 @@ export default function NewItem(){
             </div>
             <div className="bg-orange-300 p-5">
                 <p className="text-2xl lg">{quantity}</p>
-                <button className={btnStyles} onClick={ increment } disabled={incBtnDisabled}>Increase</button>
-                <button className={btnStyles} onClick={ decrement } disabled={decBtnDisabled}>Decrease</button>
+                <button 
+                className={btnStyles} 
+                onClick={ increment }
+                onChange={handleQuantityChange}
+                value={quantity} 
+                disabled={incBtnDisabled}
+                > Increase </button>
+                <button 
+                className={btnStyles} 
+                onClick={ decrement } 
+                onChange={handleQuantityChange}
+                value={quantity}
+                disabled={decBtnDisabled}
+                >Decrease</button>
             </div>
             <div className="mb-3">
                 <label className="inline-block w-40 align-top">Category:</label>
@@ -84,6 +96,17 @@ export default function NewItem(){
                 className="px-2 py-0.5 rounded bg-blue-100 focus:bg-green-200 border border-teal-600"
                 >
                     <option>Category:</option>
+                    <option>Produce</option>
+                    <option>Dairy</option>
+                    <option>Bakery</option>
+                    <option>Meat</option>
+                    <option>Frozen Foods</option>
+                    <option>Canned Goods</option>
+                    <option>Dry Goods</option>
+                    <option>Beverages</option>
+                    <option>Snacks</option>
+                    <option>Households</option>
+                    <option>Others</option>
                 </select>
             </div>
             <div className="mb-3"> 
