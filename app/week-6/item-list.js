@@ -4,6 +4,16 @@ import itemsJson from "./items.json";;
 
 export default function ItemList(props) {
 
+  const [sortBy, setSortBy] = useState("name");
+
+    const sorted = items.sort((a, b) => {
+        if (sortBy === "name") {
+            return a.name.localeCompare(b.name);
+        } else if (sortBy === "category") {
+            return a.category.localeCompare(b.category);
+        }
+    });
+
     return(
         <div className="inline-block my-6 p-2 mx-2">
             <ul className="bg-amber-500 border-l-green-300 p-3"><Item item={item1}/></ul>
